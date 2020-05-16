@@ -8,6 +8,9 @@ public class Manager : MonoBehaviour
 {
 
     public static Manager instance;
+
+    private Color32 mainBgColor;
+    Color32 screamColor = new Color32(221, 69, 55,0);
     public enum ExistingScenes
     {
         intro,
@@ -37,6 +40,7 @@ public class Manager : MonoBehaviour
 
     void Start()
     {
+        mainBgColor = Camera.main.backgroundColor;
         currentScene = ExistingScenes.intro;
         screenDimensions = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height,0));
     }
@@ -46,8 +50,6 @@ public class Manager : MonoBehaviour
     {
         RunScenes();
         GameFlow();
-        Debug.Log("curretn scene is "+currentScene);
-        Debug.Log("active scene is "+SceneManager.GetActiveScene().name);
     }
 
     void RunScenes()
@@ -79,10 +81,29 @@ public class Manager : MonoBehaviour
         if (currentScene == ExistingScenes.silent)
         {
             CountScreamingTime();
+            
+            if (isScreaming)
+            {
+                Camera.main.backgroundColor = screamColor;
+            }
+            else
+            {
+                Camera.main.backgroundColor = mainBgColor;
+            }
         }
         else if (currentScene == ExistingScenes.voice)
         {
             CountScreamingTime();
+
+            if (isScreaming)
+            {
+                Camera.main.backgroundColor = screamColor;
+            }
+            else
+            {
+                Camera.main.backgroundColor = mainBgColor;
+            }
+
         }
         else if (currentScene == ExistingScenes.ending)
         {
