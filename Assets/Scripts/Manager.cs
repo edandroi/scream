@@ -11,6 +11,8 @@ public class Manager : MonoBehaviour
 
     private Color32 mainBgColor;
     Color32 screamColor = new Color32(221, 69, 55,0);
+
+    private bool isMobile = false;
     public enum ExistingScenes
     {
         intro,
@@ -40,6 +42,11 @@ public class Manager : MonoBehaviour
 
     void Start()
     {
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            isMobile = true;
+        }
+
         mainBgColor = Camera.main.backgroundColor;
         currentScene = ExistingScenes.intro;
         screenDimensions = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height,0));
@@ -85,6 +92,11 @@ public class Manager : MonoBehaviour
             if (isScreaming)
             {
                 Camera.main.backgroundColor = screamColor;
+
+                if (isMobile)
+                {
+                    Handheld.Vibrate();
+                }
             }
             else
             {
@@ -98,6 +110,10 @@ public class Manager : MonoBehaviour
             if (isScreaming)
             {
                 Camera.main.backgroundColor = screamColor;
+                if (isMobile)
+                {
+                    Handheld.Vibrate();
+                }
             }
             else
             {
