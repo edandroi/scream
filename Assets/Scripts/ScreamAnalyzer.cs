@@ -26,11 +26,6 @@ public class ScreamAnalyzer : MonoBehaviour
         
     }
 
-    private void ShowAnalyze()
-    {
-        
-    }
-
     void AnalyzeScream()
     {
         int result = 0;
@@ -63,24 +58,19 @@ public class ScreamAnalyzer : MonoBehaviour
 
         switch (result)
         {
-            case 0:
-                Debug.Log("you are mellow");
+            case 0: // MELLOW
                 m_Text.text = "You are mellow.";
                 break;
-            case 1:
-                Debug.Log("you are relaxed");
-                m_Text.text = "You are relaxed.";
+            case 1: // RELAXED
+//                m_Text.text = "You are relaxed.";
                 break;
-            case 2:
-                Debug.Log("you are anxious");
+            case 2: // ANXIOUS
                 m_Text.text = "They say you attract what you fear. Oh, do you wanna be scared of 10K?";
                 break;
-            case 3:
-                Debug.Log("you are angry");
+            case 3: // ANGRY
                 m_Text.text = "If stress was a drug, you'd be overdosing! Chill out friend... ";
                 break;
-            case 4:
-                Debug.Log("you are troubled");
+            case 4: // TROUBLED
                 m_Text.text = "Apparently rock bottom has a basement...";
                 break;
         }

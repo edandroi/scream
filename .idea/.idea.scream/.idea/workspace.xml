@@ -13,12 +13,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
       </list>
     </option>
@@ -70,7 +72,8 @@
       <option name="presentableId" value="Default" />
       <updated>1588885070992</updated>
       <workItem from="1588885075970" duration="617000" />
-      <workItem from="1589651986004" duration="484000" />
+      <workItem from="1589651986004" duration="581000" />
+      <workItem from="1589755939266" duration="360000" />
     </task>
     <servers />
   </component>

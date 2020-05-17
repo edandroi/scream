@@ -42,7 +42,7 @@ public class Manager : MonoBehaviour
 
     void Start()
     {
-        if (Application.platform == RuntimePlatform.Android)
+        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
         {
             isMobile = true;
         }
@@ -50,6 +50,8 @@ public class Manager : MonoBehaviour
         mainBgColor = Camera.main.backgroundColor;
         currentScene = ExistingScenes.intro;
         screenDimensions = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height,0));
+
+        Debug.Log("is mobile is " + isMobile);
     }
 
     // Update is called once per frame
@@ -63,6 +65,7 @@ public class Manager : MonoBehaviour
     {
         if (currentScene == ExistingScenes.intro)
         {
+            totalTimeScreaming = 0;
             if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("Intro"))
             SceneManager.LoadScene("Intro");
         }
@@ -95,6 +98,7 @@ public class Manager : MonoBehaviour
 
                 if (isMobile)
                 {
+                    Debug.Log("vibrating now");
                     Handheld.Vibrate();
                 }
             }
