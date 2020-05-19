@@ -9,7 +9,7 @@ public class Manager : MonoBehaviour
 
     public static Manager instance;
 
-    private Color32 mainBgColor;
+    private Color32 mainBgColor = new Color32(251, 132, 116, 0);
     Color32 screamColor = new Color32(221, 69, 55,0);
 
     private bool isMobile = false;
@@ -47,11 +47,11 @@ public class Manager : MonoBehaviour
             isMobile = true;
         }
 
-        mainBgColor = Camera.main.backgroundColor;
+        Camera.main.backgroundColor =   mainBgColor;
         currentScene = ExistingScenes.intro;
         screenDimensions = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height,0));
 
-        Debug.Log("is mobile is " + isMobile);
+//        Debug.Log("is mobile is " + isMobile);
     }
 
     // Update is called once per frame
@@ -131,7 +131,13 @@ public class Manager : MonoBehaviour
             Debug.Log("Scream in seconds are "+totalSecs);
         }
     }
-    
+
+    void SetBackgroundColor()
+    {
+        if (Camera.main.backgroundColor != mainBgColor)
+            if (!isScreaming)
+                Camera.main.backgroundColor = mainBgColor;
+    }
 
     public void RunEnding()
     {
