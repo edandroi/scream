@@ -8,19 +8,14 @@ using UnityEngine.EventSystems;
 public class ButtonScream : MonoBehaviour
 {
 
-    public void Start()
-    {
-        transform.position = new Vector3(0, - Manager.screenDimensions.y + Manager.screenDimensions.y * 1/3, 0 );
-    }
-
-    private void OnMouseDown()
+    public void ScreamTrue()
     {
         Manager.isScreaming = true;
         Player.isScreaming = true;
         CamShake.shakingNow = true;
     }
 
-    private void OnMouseUp()
+    public void ScreamFalse()
     {
         Manager.isScreaming = false;
         Player.isScreaming = false;

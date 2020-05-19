@@ -9,6 +9,7 @@
         <e p="Scripts" t="Include">
           <e p="AudioManager.cs" t="Include" />
           <e p="ButtonDone.cs" t="Include" />
+          <e p="ButtonExit.cs" t="Include" />
           <e p="ButtonLoud.cs" t="Include" />
           <e p="ButtonReplay.cs" t="Include" />
           <e p="ButtonScream.cs" t="Include" />

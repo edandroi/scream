@@ -59,10 +59,10 @@ public class ScreamAnalyzer : MonoBehaviour
         switch (result)
         {
             case 0: // MELLOW
-                m_Text.text = "You are mellow.";
+                m_Text.text = "You are mellow just like a marshmallow!";
                 break;
             case 1: // RELAXED
-//                m_Text.text = "You are relaxed.";
+                m_Text.text = "You are fine, the moment is gone.";
                 break;
             case 2: // ANXIOUS
                 m_Text.text = "They say you attract what you fear. Oh, do you wanna be scared of 10K?";
