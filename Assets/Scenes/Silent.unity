@@ -492,6 +492,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 415841503, guid: e2a056a3bf60b4881a304657b398287b, type: 3}
+      propertyPath: m_fontSize
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 415841503, guid: e2a056a3bf60b4881a304657b398287b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005658270, guid: e2a056a3bf60b4881a304657b398287b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 292
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005658270, guid: e2a056a3bf60b4881a304657b398287b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005658270, guid: e2a056a3bf60b4881a304657b398287b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005658270, guid: e2a056a3bf60b4881a304657b398287b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005658273, guid: e2a056a3bf60b4881a304657b398287b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2d523eb0eb4d24259ba7368c6af7a486,
+        type: 3}
     - target: {fileID: 5248666917860866446, guid: e2a056a3bf60b4881a304657b398287b,
         type: 3}
       propertyPath: m_LocalPosition.x
