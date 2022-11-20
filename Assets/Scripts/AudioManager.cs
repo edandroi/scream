@@ -9,21 +9,19 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         m_Source = GetComponent<AudioSource>();
+        m_Source.playOnAwake = false;
         m_Source.clip = screamClip;
     }
 
-    // Update is called once per frame
-
-    private bool soundOn = false;
-    void Update()
+    public void PlayScream()
     {
-        if (Manager.isScreaming)
-        {
-            m_Source.PlayOneShot(screamClip);
-        }
-        else
-        {
-            m_Source.Stop();
-        }
+        m_Source.Play();
+        m_Source.loop = true;
+    }
+
+    public void StopScream()
+    {
+        m_Source.Stop();
+        m_Source.clip = null;
     }
 }
