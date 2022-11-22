@@ -6,13 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class Manager : MonoBehaviour
 {
-
     public static Manager instance;
 
     private Color32 mainBgColor = new Color32(251, 132, 116, 0);
     Color32 screamColor = new Color32(221, 69, 55,0);
 
     private bool isMobile = false;
+
+    private GameObject touchTracker;
+    private GameObject screamModifier;
     public enum ExistingScenes
     {
         intro,
@@ -38,6 +40,12 @@ public class Manager : MonoBehaviour
         }
         else if(instance != this)
             Destroy(gameObject);
+        
+        touchTracker = new GameObject();
+        touchTracker.AddComponent<TouchTracker>();
+        
+        screamModifier = new GameObject();
+        screamModifier.AddComponent<ScreamModifier>();
     }
 
     void Start()
@@ -50,11 +58,8 @@ public class Manager : MonoBehaviour
         Camera.main.backgroundColor =   mainBgColor;
         currentScene = ExistingScenes.intro;
         screenDimensions = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height,0));
-
-//        Debug.Log("is mobile is " + isMobile);
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         RunScenes();

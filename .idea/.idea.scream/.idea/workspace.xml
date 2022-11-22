@@ -19,15 +19,19 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonExit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScreamModifier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TouchTracker.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ButtonExit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ButtonScream.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TouchTracker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScreamModifier.cs" />
       </list>
     </option>
   </component>
@@ -83,7 +87,7 @@
       <workItem from="1589851627975" duration="891000" />
       <workItem from="1589930204211" duration="1110000" />
       <workItem from="1668928409192" duration="4000" />
-      <workItem from="1668928592746" duration="1060000" />
+      <workItem from="1668928592746" duration="3401000" />
     </task>
     <servers />
   </component>
@@ -117,13 +121,13 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs</url>
-          <line>65</line>
+          <line>59</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs" initialLine="65">
             <startOffsets>
-              <option value="1491" />
+              <option value="1412" />
             </startOffsets>
             <endOffsets>
-              <option value="1497" />
+              <option value="1418" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />

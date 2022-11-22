@@ -20,12 +20,6 @@ public class ScreamAnalyzer : MonoBehaviour
         AnalyzeScream();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void AnalyzeScream()
     {
         int result = 0;
