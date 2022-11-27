@@ -1178,6 +1178,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6534543752226943634, guid: 4f59c6b60bad44794b8fd74a353a7c6f,
+        type: 3}
+      propertyPath: screamClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1747b81a2cd49454ca63995055e68422, type: 3}
     - target: {fileID: 6534543752226943645, guid: 4f59c6b60bad44794b8fd74a353a7c6f,
         type: 3}
       propertyPath: m_RootOrder
