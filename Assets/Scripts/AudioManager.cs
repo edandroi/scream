@@ -6,6 +6,18 @@ public class AudioManager : MonoBehaviour
 {
     private AudioSource m_Source;
     public AudioClip screamClip;
+    private AudioManager instance;
+    
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else if (instance != this)
+            Destroy(gameObject);
+    }
     void Start()
     {
         m_Source = GetComponent<AudioSource>();
@@ -22,6 +34,17 @@ public class AudioManager : MonoBehaviour
     public void StopScream()
     {
         m_Source.Stop();
-        m_Source.clip = null;
+    }
+
+    public void AdjustPitch(float pitch)
+    {
+        m_Source.pitch = pitch;
+        
+    }
+    
+    public void AdjustVolume(float volume)
+    {
+        m_Source.volume = volume;
+        m_Source.volume = Mathf.Clamp(m_Source.volume, 0.2f, 1f);
     }
 }

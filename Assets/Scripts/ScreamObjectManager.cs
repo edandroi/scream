@@ -21,7 +21,7 @@ public class ScreamObjectManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Manager.isScreaming)
+        if (GameManager.isScreaming)
         {
             timerNewScream -= Time.deltaTime;
 //            float xCoord = Random.Range(0, stageDimensions.x);

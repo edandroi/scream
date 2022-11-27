@@ -6,6 +6,6 @@ public class ButtonSilent : MonoBehaviour
 {
     public void RunSilence()
     {
-        Manager.currentScene = Manager.ExistingScenes.silent;
+        GameManager.currentScene = GameManager.ExistingScenes.silent;
     }
 }

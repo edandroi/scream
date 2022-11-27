@@ -5,20 +5,38 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class ButtonScream : MonoBehaviour
+public class ButtonScream : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-
+    private AudioManager _audioManager;
+    private Button screamButton;
+    
+    void Start()
+    {
+        _audioManager = FindObjectOfType<AudioManager>();
+        screamButton = gameObject.GetComponent<Button>();
+    }
+    
     public void ScreamTrue()
     {
-        Manager.isScreaming = true;
+        GameManager.isScreaming = true;
         Player.isScreaming = true;
         CamShake.shakingNow = true;
     }
 
     public void ScreamFalse()
     {
-        Manager.isScreaming = false;
+        GameManager.isScreaming = false;
         Player.isScreaming = false;
         CamShake.shakingNow = false;
+    }
+    
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        _audioManager.PlayScream();
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        _audioManager.StopScream();
     }
 }

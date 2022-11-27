@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Manager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    public static Manager instance;
+    public static GameManager instance;
 
     private Color32 mainBgColor = new Color32(251, 132, 116, 0);
     Color32 screamColor = new Color32(221, 69, 55,0);
@@ -42,9 +42,11 @@ public class Manager : MonoBehaviour
             Destroy(gameObject);
         
         touchTracker = new GameObject();
+        touchTracker.name = "Touch Tracker";
         touchTracker.AddComponent<TouchTracker>();
         
         screamModifier = new GameObject();
+        touchTracker.name = "Scream Modifier";
         screamModifier.AddComponent<ScreamModifier>();
     }
 

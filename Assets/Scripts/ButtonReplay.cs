@@ -17,6 +17,6 @@ public class ButtonReplay : MonoBehaviour
 
     public void Replay()
     {
-        Manager.currentScene = Manager.ExistingScenes.intro;
+        GameManager.currentScene = GameManager.ExistingScenes.intro;
     }
 }

@@ -14,8 +14,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonScream.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonDone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonLoud.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonExit.cs" root0="FORCE_HIGHLIGHTING" />
@@ -26,12 +27,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/ButtonExit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ButtonScream.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TouchTracker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ButtonLoud.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ButtonScream.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScreamModifier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs" />
       </list>
     </option>
   </component>
@@ -87,7 +90,9 @@
       <workItem from="1589851627975" duration="891000" />
       <workItem from="1589930204211" duration="1110000" />
       <workItem from="1668928409192" duration="4000" />
-      <workItem from="1668928592746" duration="3401000" />
+      <workItem from="1668928592746" duration="6063000" />
+      <workItem from="1669536850356" duration="523000" />
+      <workItem from="1669537429082" duration="4847000" />
     </task>
     <servers />
   </component>
@@ -121,13 +126,13 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs</url>
-          <line>59</line>
+          <line>79</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs" initialLine="65">
             <startOffsets>
-              <option value="1412" />
+              <option value="1978" />
             </startOffsets>
             <endOffsets>
-              <option value="1418" />
+              <option value="1984" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />

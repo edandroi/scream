@@ -15,7 +15,7 @@
           <e p="ButtonScream.cs" t="Include" />
           <e p="ButtonSilent.cs" t="Include" />
           <e p="CamShake.cs" t="Include" />
-          <e p="Manager.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="ScreamAnalyzer.cs" t="Include" />
           <e p="ScreamModifier.cs" t="Include" />

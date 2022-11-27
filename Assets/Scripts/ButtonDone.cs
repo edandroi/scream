@@ -18,6 +18,6 @@ public class ButtonDone : MonoBehaviour
     
     public void RunEnding()
     {
-        Manager.currentScene = Manager.ExistingScenes.ending;
+        GameManager.currentScene = GameManager.ExistingScenes.ending;
     }
 }

@@ -45,7 +45,7 @@ public class ScreamObject : MonoBehaviour
 
         if (transform.localScale.x > target - .01f)
         {
-            if (Manager.isScreaming)
+            if (GameManager.isScreaming)
             {
                 timerDestroy -= Time.deltaTime;
             }

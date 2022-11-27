@@ -11,6 +11,19 @@ public class TouchTracker : MonoBehaviour
     
     private Camera cam;
     
+    private TouchTracker instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else if (instance != this)
+            Destroy(gameObject);
+    }
+    
     void Start()
     {
         if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
@@ -23,14 +36,16 @@ public class TouchTracker : MonoBehaviour
     
     void Update()
     {
-        if (isMobile)
-        {
-            TrackFingerPos();
-        }
-        else
-        {
-            TrackMousePos();
-        }
+//        if (isMobile)
+//        {
+//            TrackFingerPos();
+//        }
+//        else
+//        {
+//            TrackMousePos();
+//        }
+
+        TrackMousePos();
     }
 
     void TrackFingerPos()
@@ -42,12 +57,27 @@ public class TouchTracker : MonoBehaviour
     void TrackMousePos()
     {
         mousePos = Input.mousePosition;
-        Vector3 screenPos = cam.ScreenToViewportPoint(mousePos);
-        playerInteractionPos = screenPos;
+        playerInteractionPos = mousePos;
     }
 
-    public Vector3 playerPos()
+    public Vector2 playerPosNormalized()
     {
+        /*
+        if (isMobile)
+        {
+            Vector3 screenPos = Camera.main.ScreenToViewportPoint(fingerPos);
+            playerInteractionPos = screenPos;
+        }
+        else
+        {
+            Vector3 screenPos = Camera.main.ScreenToViewportPoint(mousePos);
+            playerInteractionPos = screenPos;
+        }
+        */
+
+        Vector2 screenPos = Camera.main.ScreenToViewportPoint(mousePos);
+        playerInteractionPos = screenPos;
+        
         return playerInteractionPos;
     }
 }

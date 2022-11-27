@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class ButtonLoud : MonoBehaviour
 {
+
     public void RunVoice()
     {
-        Manager.currentScene = Manager.ExistingScenes.voice;
+        GameManager.currentScene = GameManager.ExistingScenes.voice;
     }
+    
 }
