@@ -32,11 +32,13 @@ public class ButtonScream : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     
     public void OnPointerDown(PointerEventData eventData)
     {
-        _audioManager.PlayScream();
+        if (GameManager.currentScene == GameManager.ExistingScenes.voice)
+            _audioManager.PlayScream();
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        _audioManager.StopScream();
+        if (GameManager.currentScene == GameManager.ExistingScenes.voice)
+            _audioManager.StopScream();
     }
 }

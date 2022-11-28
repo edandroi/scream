@@ -29,12 +29,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ButtonExit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TouchTracker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ButtonLoud.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ButtonScream.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScreamModifier.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ButtonScream.cs" />
       </list>
     </option>
   </component>
@@ -92,7 +92,8 @@
       <workItem from="1668928409192" duration="4000" />
       <workItem from="1668928592746" duration="6063000" />
       <workItem from="1669536850356" duration="523000" />
-      <workItem from="1669537429082" duration="4970000" />
+      <workItem from="1669537429082" duration="5222000" />
+      <workItem from="1669642595284" duration="175000" />
     </task>
     <servers />
   </component>

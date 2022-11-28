@@ -135,7 +135,6 @@ public class GameManager : MonoBehaviour
         else if (currentScene == ExistingScenes.ending)
         {
             RevealScreamedSeconds();
-            Debug.Log("Scream in seconds are "+totalSecs);
         }
     }
 
