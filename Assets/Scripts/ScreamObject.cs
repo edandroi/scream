@@ -8,10 +8,12 @@ public class ScreamObject : MonoBehaviour
 
     private Vector3 finalScale;
 
-    float minScale = .2f;
-    float maxScale = .9f;
+    private TouchTracker _touchTracker;
 
-    public float scalingSpeed = .1f;
+    float minScale = 1f;
+    float maxScale = 2f;
+
+    public float scalingSpeed = 1f;
 
     private float target;
     
@@ -19,13 +21,18 @@ public class ScreamObject : MonoBehaviour
 
     void Start()
     {
+        _touchTracker = FindObjectOfType<TouchTracker>();
         transform.localScale = Vector3.zero;
         m_Renderer = GetComponent<SpriteRenderer>();
         
-        float scaler = Random.Range(minScale, maxScale);
+        float scaler = Random.Range(minScale, maxScale)*_touchTracker.playerPosNormalized().y;
+        scaler = Mathf.Clamp(scaler, 0.2f, 3f);
         finalScale = new Vector3(scaler, scaler, 1);
 
         target = scaler - .05f;
+        
+        scalingSpeed *= _touchTracker.playerPosNormalized().x;
+        scalingSpeed = Mathf.Clamp(scalingSpeed, 0.05f, 0.8f);
 
         timerDestroy = Random.Range(.4f, 1.4f);
         
