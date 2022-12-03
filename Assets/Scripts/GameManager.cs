@@ -30,7 +30,8 @@ public class GameManager : MonoBehaviour
     public static float totalTimeScreaming= 0;
     private float screamInSeconds = 0;
 
-    public static Vector3 screenDimensions;
+    public static bool initialPlay = true;
+    
     private void Awake()
     {
         if (instance == null)
@@ -48,6 +49,10 @@ public class GameManager : MonoBehaviour
         screamModifier = new GameObject();
         touchTracker.name = "Scream Modifier";
         screamModifier.AddComponent<ScreamModifier>();
+
+        
+        if(ES3.KeyExists("initialPlay"))
+            initialPlay = ES3.Load<bool>("initialPlay");
     }
 
     void Start()
@@ -57,9 +62,13 @@ public class GameManager : MonoBehaviour
             isMobile = true;
         }
 
-        Camera.main.backgroundColor =   mainBgColor;
+        if (initialPlay)
+            Camera.main.backgroundColor = Color.blue;
+        else
+        {
+            Camera.main.backgroundColor =   mainBgColor;
+        }
         currentScene = ExistingScenes.intro;
-        screenDimensions = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height,0));
     }
     
     void Update()
