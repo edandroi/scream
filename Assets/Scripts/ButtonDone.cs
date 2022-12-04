@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class ButtonDone : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
     public void RunEnding()
     {
+        if (GameManager.currentScene == GameManager.ExistingScenes.voice && !GameManager.firstLoudScream)
+        {
+            GameManager.firstLoudScream = true;
+            ES3.Save("firstLoudScream", GameManager.firstLoudScream);
+        }
+        else if (GameManager.currentScene == GameManager.ExistingScenes.silent && !GameManager.firstSilentScream)
+        {
+            GameManager.firstSilentScream = true;
+            ES3.Save("firstSilentScream", GameManager.firstSilentScream);
+        }
+
         GameManager.currentScene = GameManager.ExistingScenes.ending;
     }
 }

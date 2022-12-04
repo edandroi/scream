@@ -13,8 +13,6 @@ public class ScreamAnalyzer : MonoBehaviour
     void Start()
     {
         totalScreamDuration = GameManager.totalSecs;
-        
-        Debug.Log(GetComponent<TextMeshProUGUI>());
         m_Text = GetComponent<TextMeshProUGUI>();
 
         AnalyzeScream();
@@ -91,7 +89,7 @@ public class ScreamAnalyzer : MonoBehaviour
                 m_Text.text = "Oh no. Oh no... Oh no, no, NO NO NO!";
                 break;
             case 6: // lvl6
-                m_Text.text = "Is this even helping you for real?";
+                m_Text.text = "Is screaming even helping you?";
                 break;
             case 7: // lvl7
                 m_Text.text = "Your therapist must be rich by now...";
@@ -102,3 +100,9 @@ public class ScreamAnalyzer : MonoBehaviour
         }
     }
 }
+
+/*
+ * Why was the math book sad? Because it had too many problems!
+ * If stress was a drug, you'd be tripping balls!
+ *
+ */

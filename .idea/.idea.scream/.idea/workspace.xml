@@ -13,6 +13,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Scripts/ES3.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TutorialText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonSilent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
@@ -34,10 +35,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ButtonLoud.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScreamModifier.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ButtonScream.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScreamObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ButtonExit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ButtonScream.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ButtonDone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TutorialText.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       </list>
     </option>
@@ -98,7 +101,8 @@
       <workItem from="1669536850356" duration="523000" />
       <workItem from="1669537429082" duration="5222000" />
       <workItem from="1669642595284" duration="300000" />
-      <workItem from="1669725599702" duration="1412000" />
+      <workItem from="1669725599702" duration="3003000" />
+      <workItem from="1670143979684" duration="3599000" />
     </task>
     <servers />
   </component>
@@ -132,26 +136,26 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs</url>
-          <line>79</line>
+          <line>77</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs" initialLine="65">
             <startOffsets>
-              <option value="1978" />
+              <option value="1917" />
             </startOffsets>
             <endOffsets>
-              <option value="1984" />
+              <option value="1923" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/ButtonScream.cs</url>
-          <line>19</line>
+          <line>22</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/ButtonScream.cs" initialLine="19">
             <startOffsets>
-              <option value="493" />
+              <option value="592" />
             </startOffsets>
             <endOffsets>
-              <option value="494" />
+              <option value="593" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />

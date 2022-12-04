@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
 
     private GameObject touchTracker;
     private GameObject screamModifier;
+    
+    public static bool firstLoudScream;
+    public static bool firstSilentScream;
     public enum ExistingScenes
     {
         intro,
@@ -61,13 +64,12 @@ public class GameManager : MonoBehaviour
         {
             isMobile = true;
         }
-
-        if (initialPlay)
-            Camera.main.backgroundColor = Color.blue;
-        else
-        {
-            Camera.main.backgroundColor =   mainBgColor;
-        }
+        
+        if(ES3.KeyExists("firstLoudScream"))
+            firstLoudScream = ES3.Load<bool>("firstLoudScream");
+        if(ES3.KeyExists("firstSilentScream"))
+            firstSilentScream = ES3.Load<bool>("firstSilentScream");
+        
         currentScene = ExistingScenes.intro;
     }
     
@@ -76,7 +78,7 @@ public class GameManager : MonoBehaviour
         RunScenes();
         GameFlow();
     }
-
+    
     void RunScenes()
     {
         if (currentScene == ExistingScenes.intro)

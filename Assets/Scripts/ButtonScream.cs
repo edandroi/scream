@@ -9,11 +9,14 @@ public class ButtonScream : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 {
     private AudioManager _audioManager;
     private Button screamButton;
+
+    private TutorialText _tutorialText;
     
     void Start()
     {
         _audioManager = FindObjectOfType<AudioManager>();
         screamButton = gameObject.GetComponent<Button>();
+        _tutorialText = FindObjectOfType<TutorialText>();
     }
     
     public void ScreamTrue()
@@ -32,6 +35,8 @@ public class ButtonScream : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     
     public void OnPointerDown(PointerEventData eventData)
     {
+        _tutorialText.InitialTapTrigger();
+        
         if (GameManager.currentScene == GameManager.ExistingScenes.voice)
             _audioManager.PlayScream();
     }
