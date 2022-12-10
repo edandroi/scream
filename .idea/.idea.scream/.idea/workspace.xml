@@ -40,8 +40,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ButtonScream.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ButtonDone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TutorialText.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs" />
       </list>
     </option>
   </component>
@@ -102,7 +102,8 @@
       <workItem from="1669537429082" duration="5222000" />
       <workItem from="1669642595284" duration="300000" />
       <workItem from="1669725599702" duration="3003000" />
-      <workItem from="1670143979684" duration="3599000" />
+      <workItem from="1670143979684" duration="3699000" />
+      <workItem from="1670662988635" duration="1429000" />
     </task>
     <servers />
   </component>
@@ -135,19 +136,6 @@
           <option name="timeStamp" value="1" />
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs</url>
-          <line>77</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs" initialLine="65">
-            <startOffsets>
-              <option value="1917" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1923" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/ButtonScream.cs</url>
           <line>22</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/ButtonScream.cs" initialLine="19">
@@ -159,6 +147,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs</url>
+          <line>64</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/ScreamAnalyzer.cs" initialLine="64">
+            <startOffsets>
+              <option value="1647" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1658" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -8,20 +8,22 @@ public class ScreamAnalyzer : MonoBehaviour
 {
     private int totalScreamDuration;
 
-    private TextMeshProUGUI m_Text;
-    
+    private TextMeshProUGUI m_AnalyzerText;
+    private TextMeshProUGUI m_LevelText;
+
+    private int result;    
     void Start()
     {
         totalScreamDuration = GameManager.totalSecs;
-        m_Text = GetComponent<TextMeshProUGUI>();
+        m_AnalyzerText = GetComponent<TextMeshProUGUI>();
+        m_LevelText= GameObject.FindWithTag("levelTxt").GetComponent<TextMeshProUGUI>();
 
+        result = 0;
         AnalyzeScream();
     }
 
     void AnalyzeScream()
     {
-        int result = 0;
-
         if (totalScreamDuration < 2)
         {
             // lvl0
@@ -71,31 +73,40 @@ public class ScreamAnalyzer : MonoBehaviour
         switch (result)
         {
             case 0: // lvl0 Mellow
-                m_Text.text = "You are mellow just like a marshmallow!";
+                m_LevelText.text = "Anxiety Level: " + result.ToString();
+                m_AnalyzerText.text = "You are mellow just like a marshmallow!";
                 break;
             case 1: // lvl1
-                m_Text.text = "You are fine, the moment is gone.";
+                m_LevelText.text = "Anxiety Level: " + result.ToString();
+                m_AnalyzerText.text = "You are fine, the moment is gone.";
                 break;
             case 2: // lvl2
-                m_Text.text = "Okay, you had a moment. All okay now. Doing well, again.";
+                m_LevelText.text = "Anxiety Level: " + result.ToString();
+                m_AnalyzerText.text = "Okay, you had a moment. All okay now. Doing well, again.";
                 break;
             case 3: // lvl3
-                m_Text.text = "Have you tired breathing in and out again?";
+                m_LevelText.text = "Anxiety Level: " + result.ToString();
+                m_AnalyzerText.text = "Have you tired breathing in and out again?";
                 break;
             case 4: // lvl4
-                m_Text.text = "If stress was a drug, you'd be overdosing! Chill out friend... ";
+                m_LevelText.text = "Anxiety Level: " + result;
+                m_AnalyzerText.text = "If stress was a drug, you'd be overdosing! Chill out friend... ";
                 break;
             case 5: // lvl5
-                m_Text.text = "Oh no. Oh no... Oh no, no, NO NO NO!";
+                m_LevelText.text = "Anxiety Level: " + result;
+                m_AnalyzerText.text = "Oh no. Oh no... Oh no, no, NO NO NO!";
                 break;
             case 6: // lvl6
-                m_Text.text = "Is screaming even helping you?";
+                m_LevelText.text = "Anxiety Level: " + result;
+                m_AnalyzerText.text = "Is screaming even helping you?";
                 break;
             case 7: // lvl7
-                m_Text.text = "Your therapist must be rich by now...";
+                m_LevelText.text = "Anxiety Level: " + result;
+                m_AnalyzerText.text = "Your therapist must be rich by now...";
                 break;
             case 8: // lvl8
-                m_Text.text = "Something is awfully wrong with you...Please quit the app and call 911!";
+                m_LevelText.text = "Aaaa..nx.t...y Leee..vl: " + result;
+                m_AnalyzerText.text = "Something is awfully wrong with you...Please quit the app and call 911!";
                 break;
         }
     }
